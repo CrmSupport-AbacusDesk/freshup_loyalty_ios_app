@@ -1,0 +1,61 @@
+
+<ion-header>
+    <ion-navbar class="slide-af">
+        <!-- For Hindi -->
+        <!-- <ion-title>{{'Product Detail' | translate}} - {{lang !='en' ? prod_detail.hin_category_name : prod_detail.category_name  | titlecase}}</ion-title> -->
+        <ion-title>{{'Product Detail' | translate}} - {{prod_detail.category_name  | titlecase}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    
+    <!-- <div class="slide-image" style="height: auto;">
+        <ion-slides class="cs-slide"  [initialSlide]="0" >            
+            <ion-slide *ngFor="let row of prod_detail.image; let i=index" (click)="viewDetail(row.image_name)">
+                <div class="swiper-zoom-container">
+                    <img [src]="upload_url+row.image_name">
+                </div>
+            </ion-slide>
+            
+            <ion-slide *ngIf="prod_detail.image == '' && prod_detail.image.length == 0" >
+                <div class="swiper-zoom-container">
+                    <img src="assets/imgs/default-image.png">
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </div> -->
+    
+    
+    
+    
+    <div class="item-table">
+        <table>
+            <tr>
+                <td class="w85">Product Name :-</td>
+                <th>{{prod_detail.product_name | titlecase}}</th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="sizes-table mb16">
+        <table>
+            <tr>
+                <th>Length</th>
+                <th>Width</th>
+                <th>Height</th>
+            </tr>
+            <tr *ngFor="let row of sizeData">
+                <td>{{row.length}}</td>
+                <td>{{row.width}}</td>
+                <td>{{row.height}}</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- <div class="pr-about">
+        For Hindi
+        <h1>{{lang !='en' ? prod_detail.hin_product_name : prod_detail.product_name | titlecase}}</h1>
+        <h1>{{prod_detail.product_name | titlecase}}</h1>
+        <p *ngIf="prod_detail.desc!='' || prod_detail.hin_desc!=''"><strong>{{'Description' | translate}}</strong> : {{lang !='en' ? prod_detail.hin_desc : prod_detail.desc}}</p>
+    </div> -->
+</ion-content>

@@ -1,0 +1,29 @@
+page-product-subdetail {
+
+    .sizes-table{
+        padding: 0px 16px;
+
+        table{
+            width: 100%;
+            table-layout: fixed;
+            box-sizing: border-box;
+            border-collapse: collapse;
+
+            tr{
+
+                th{
+                    background-color: #d53135;
+                    color: #ffffff;
+                }
+
+                td, th{
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 5px 8px;
+                    border: 1px solid #333;
+                }
+            }
+        }
+    }
+
+}

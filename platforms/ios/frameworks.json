@@ -1,0 +1,11 @@
+{
+    "WebKit.framework": 1,
+    "libz.tbd": 1,
+    "CoreLocation.framework": 2,
+    "Social.framework": 1,
+    "MessageUI.framework": 1,
+    "AVFoundation.framework": 2,
+    "AudioToolbox.framework": 1,
+    "ImageIO.framework": 1,
+    "QuickLook.framework": 1
+}
